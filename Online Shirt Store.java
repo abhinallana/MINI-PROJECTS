@@ -2,8 +2,12 @@ import java.util.Scanner;
 
 public class onlineStore {
 		public static void main(String[] args) {
-			shirts new1 = new shirts("Your Name");
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Please Enter Your Name : ");
+			String s = sc.next();
+			shirts new1 = new shirts(s);
 			new1.menu();
+
 
 		}
 
