@@ -11,7 +11,10 @@ public class calculator2 {
 		System.out.println("enter a number:");
 		double b = sc.nextDouble();
 		System.out.println("symbol:");
+		
 	    char s = sc.next().charAt(0);
+		
+	    // Add symbols to know the Calculation		
 	    if(s=='+') {
 	    	double add = addition(a,b);
 	    	System.out.println(add);
@@ -25,6 +28,9 @@ public class calculator2 {
 	    }else if(s == '/') {
 	    	double div = division(a,b);
 	    	System.out.println(div);
+	    }else if(s == '%') {
+	    	double mod = modulus(a,b);
+	    	System.out.println(mod);
 	    }else {
 	    	System.out.println("Error");
 	    }
@@ -47,6 +53,10 @@ public class calculator2 {
 	    static double division(double a , double b) {
 	    	double result = a/b;
 	    	return result;
+	    }
+	    static double modulus(double a , double b){
+		    double result = a%b;
+		    return result;
 	    }
 	}
 
