@@ -84,7 +84,7 @@ public class onlineStore {
 		System.out.println("1. RED");
 		System.out.println("2. YELLOW");
 		System.out.println("3. BLUE");
-		System.out.println("4. PURPLE");
+		System.out.println("4. PURPLE/INDIGO");
 		System.out.println("5. PINK");
 		System.out.println("6. VIOLET");
 		System.out.println("7. BLACK");
@@ -95,7 +95,7 @@ public class onlineStore {
 		case 1:
 			System.out.println("Thank you for choosing RED color");
 			System.out.println();
-			System.out.println("Price : 350 $ ");
+			System.out.println("Price : 300 $ ");
 			break;
 		case 2:
 			System.out.println("Thank you for choosing YELLOW color");
@@ -110,7 +110,7 @@ public class onlineStore {
 		case 4:
 			System.out.println("Thank you for choosing PURPLE color");
 			System.out.println();
-			System.out.println("Price : 400 $ ");
+			System.out.println("Price : 405 $ ");
 			break;
 		case 5:
 			System.out.println("Thank you for choosing PINK color");
@@ -180,9 +180,12 @@ public class onlineStore {
 			System.out.println("Total Amount to pay :" + pay );
 			System.out.println("Confirm - Y/N ");
 			char c = sc.next().charAt(0);
-			if(c=='Y'||c=='y')System.out.println("Succesfull Payment of " + pay + "$");
-			else if(c=='N'||c=='n')System.out.println("Your Transaction is Cancelled...Sorry");
-			else System.out.println("Invalid Option");
+			if(c=='Y'||c=='y')
+				System.out.println("Succesfull Payment of " + pay + "$");
+			else if
+				(c=='N'||c=='n')System.out.println("Your Transaction is Cancelled...Sorry");
+			else 
+				System.out.println("Invalid Option");
 			break;
 		case 2 :
 			System.out.println("Total Amount to pay :" + pay );
