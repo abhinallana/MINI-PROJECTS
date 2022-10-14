@@ -53,6 +53,9 @@ field.addActionListener(new ActionListener(){             //to perform the activ
 		}else if(msg.toLowerCase().contains("what is your name")) {
 			
 			txt.append("Roxy: My name is ROXY\n");
+		}else if(msg.toLowerCase().contains("what is the latest update today")) {
+			
+			txt.append("Roxy: Please check ur todo list to get the Updates. \n");
 		}else if(msg.toLowerCase().contains("registered email id on my laptop")) {
 			
 			txt.append("Roxy:none\n");
